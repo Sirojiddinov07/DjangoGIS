@@ -114,12 +114,12 @@ DATE_FORMAT = "d.m.y"
 TIME_FORMAT = "H:i:s"
 DATE_INPUT_FORMATS = ["%d.%m.%Y", "%Y.%d.%m", "%Y.%d.%m"]
 
-FACTORYS = [
-    ("core.http.database.factory.PostFactory", 100000),
-    # ("core.http.database.factory.UserFactory", 1),
-]
+# FACTORYS = [
+#     ("core.http.database.factory.PostFactory", 100000),
+#     # ("core.http.database.factory.UserFactory", 1),
+# ]
 
-SEEDERS = ["core.http.database.seeder.UserSeeder"]
+# SEEDERS = ["core.http.database.seeder.UserSeeder"]
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "resources/static"),
@@ -152,7 +152,7 @@ LANGUAGE_CODE = "uz"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")  # Media files
 MEDIA_URL = "/media/"
 
-AUTH_USER_MODEL = "http.User"
+AUTH_USER_MODEL = "custom_user.User"
 
 CELERY_BROKER_URL = env("RABBITMQ_URL")
 CELERY_RESULT_BACKEND = env("RABBITMQ_RESULT_BACKEND")

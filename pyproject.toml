@@ -2,7 +2,7 @@
 name = "django-blueprint"
 version = "0.1.0"
 description = ""
-authors = ["A'zamov Samandar <azamov.samandar.programmer@gmail.com>"]
+authors = ["Savron Sirojiddinov"]
 readme = "README.md"
 
 [tool.black]
@@ -70,7 +70,8 @@ djangorestframework-stubs = "^3.15.0"
 pytest-django = "^4.8.0"
 coverage = "^7.5.4"
 pytest-cov = "^5.0.0"
-
+django-use-email-as-username = "^1.4.0"
+django-rest-passwordreset = "^1.4.1"
 
 [build-system]
 requires = ["poetry-core"]

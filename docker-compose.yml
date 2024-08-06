@@ -7,13 +7,13 @@ services:
     volumes:
       - .:/code
     ports:
-      - ${PORT:-8001}:8000
+      - ${PORT:-8081}:8000
       - ${CELERY_FLOWER:-5555}:5555
     depends_on:
       - db
       - redis
   db:
-    image: postgres:16
+    image: postgres:13
     restart: always
     environment:
       POSTGRES_DB: django
